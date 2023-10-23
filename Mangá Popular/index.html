@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mangá Popular: A casa do mangás!</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            window.onload = function() {
+                var imageUrl = "Imagem4.jpg";
+                var imagePopup = window.open("", "ImagePopup", "width=400, height=400");
+                imagePopup.document.write("<html><body style='margin: 0; text-align: center;'><img src='" + imageUrl + "' style='max-width: 100%; max-height: 100%;' /></body></html>");
+            };
+        </script>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="redirec.html">Em alta</a></li>
+                    <li><a href="redirec.html">Parceria</a></li>
+                    <li><a href="redirec.html">Assine</a></li>
+                    <li><a href="redirec.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="banner">
+            <img src="Imagens/Banner.png" alt="banner">
+        </div>
+
+        <div>
+            <p class="titulo">Em alta</p>
+        </div>
+        
+        <a href="redirec.html">
+        <div class="carrossel">
+            <div class="slide">
+                <img src="Imagens/Imagem1.jpg" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="Imagens/Imagem2.jpg" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="Imagens/Imagem3.jpg" alt="Imagem 3">
+            </div>
+            <div class="slide">
+                <img src="Imagens/Imagem5.jpg" alt="Imagem 3">
+            </div>
+            <div class="slide">
+                <img src="Imagens/Imagem6.jpg" alt="Imagem 3">
+            </div>
+        </div>
+        </a>
+
+        <div class="prevnext">
+        <button id="prev">Anterior</button>
+        <button id="next">Próximo</button>
+        <script src="script.js"></script>
+        </div>
+
+        <main>
+            <h1 class="main">SOBRE NÓS</h1>
+            <p>São os sonhos que nos fazem viver, são eles que nos levam a acordar todos os dias com uma grande motivação para enfrentarmos cada desafio. É a perspetiva de realizarmos projetos e concretizarmos objetivos pessoais que nos induz a acreditarmos que podemos realmente vencer. Então, sonhe sem limites e dê asas à sua imaginação.
+                É verdade que às vezes vislumbramos cenários que não se tornam possíveis, e muitas vezes as dificuldades que nos surgem trazem cansaço e parecem tornar nossa batalha cada vez mais difícil. Mas quanto maior for a nossa meta, maior também será a nossa recompensa, e tentar será sempre a garantia de que fizemos tudo por aquilo que queríamos.
+                Por isso, não desista seja qual for a sua situação. Deixe que seus sonhos comandem os passos que dá e os caminhos que escolhe, e seja feliz por fazer da persistência o seu maior aliado.
+            </p>
+        </main>
+
+
+        <div>
+            <p class="titulo">Assine</p>
+        </div>
+
+
+        <div class="assine">
+            <p>
+            Fique por dentro de todas as atualizações do seu mangá favorito, promoções, sorteios e tudo que, nós e nossa comunidade, podemos oferecer. Fique por dentro de todas as atualizações do seu mangá favorito, promoções, sorteios e tudo que, nós e nossa comunidade, podemos oferecer.
+            </p>
+        </div>
+
+
+        <div class="botao">
+            <input type="text" id="user" placeholder="Digite seu email">
+            <button onclick="verificarEmail()">Enviar</button>
+        
+            <script>
+                function verificarEmail() {
+                    var user = document.getElementById('user').value;
+                    var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        
+                    if (user.trim() === '') {
+                        alert('Espaço não preenchido.');
+                    } else if (regex.test(user)) {
+                        alert('Você receberá todas as notícias do mundo dos mangás na sua caixa de entrada!');
+                    } else {
+                        alert('Por favor, digite um email válido.');
+                    }
+                }
+            </script>
+        </div>
+
+
+        <div class="footer">
+            <h2>Criado por: Natanael Pinto de Andrade (2023)</h2>
+        </div>
+
+    </body>
+</html>

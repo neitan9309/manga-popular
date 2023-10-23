@@ -1,0 +1,218 @@
+*{
+    font-family: 'Segoe UI Light', Arial, sans-serif; 
+    font-weight: 200; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #474747;
+}
+
+/*cabeçalho*/
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: left;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 7px;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover{
+    color: rgb(170, 170, 170);
+}
+
+/*banner*/
+.banner {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-bottom: 50px;
+}
+
+.banner img {
+    width: 100%;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.3);
+}
+
+/*redirecionamento*/
+.redirecdiv{
+    text-align: justify;
+    margin-top: -80px;
+    margin-bottom: -120px;
+}
+
+.redirec {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-bottom: 35px;
+}
+
+.redirec img {
+    width: 50%;
+    height: 930px;
+}
+
+/*texto corpo*/
+main {
+    text-align: justify;
+    padding: 130px;
+    margin-top: -85px;
+    margin-bottom: -70px;
+}
+
+/*texto assine, improviso*/
+.assine {
+    text-align: justify;
+    padding: 130px;
+    margin-top: -85px;
+    margin-bottom: -70px;
+}
+
+/*textos geral*/
+h1 {
+    text-align: center;
+    font-weight: 600;
+    color:#ffffff;
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 12px;
+    color:#ffffff;
+    margin-top: 7px;
+    margin-bottom: 3px;
+}
+
+p{
+    text-align: justify;
+    color: white;
+}
+
+/*Textos com destaque*/
+.titulo,
+.botao {
+    font-family: 'Broadway';
+    text-align: left;
+    margin-top: 35x;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 26px;
+    color:#ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main {
+    font-family: 'Bernard MT'; 
+    font-size: 44px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.redirec_texto{
+    font-family: 'Bernard MT'; 
+    font-size: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*Carrossel*/
+.carrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    flex: 0 0 70%;
+}
+
+.slide img {
+    width: 70%;
+    height: 970px;
+    padding-left: 15%;
+}
+
+.prevnext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prev, #next {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #c73e3e; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#prev {
+    margin-right: 10px;
+}
+
+#prev:hover {
+    background-color: #923030; 
+}
+
+#next:hover {
+    background-color: #923030; 
+}
+
+.carrossel:hover{
+    cursor: pointer;
+}
+
+/*Botões assine*/
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px; 
+    width: 300px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #c73e3e; 
+    color: #fff;
+    border: none;
+    border-radius: 3px; 
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #923030; 
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+}
+  
+/*Rodapé*/
+.footer {
+    padding-bottom: 1px;
+    background-color: #333;
+}
